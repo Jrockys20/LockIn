@@ -1,0 +1,34 @@
+# Publicar únicamente las fuentes y los recursos del producto.
+/*
+!/.gitignore
+!/README.md
+!/main.py
+!/requirements.txt
+!/requirements-build.txt
+!/lockin/
+!/models/
+!/packaging/
+!/scripts/
+
+# El modelo se obtiene mediante su descarga verificada.
+/models/*
+!/models/README.md
+
+# Herramientas necesarias para ejecutar y construir la aplicación.
+/scripts/*
+!/scripts/download_model.py
+!/scripts/prepare_build.py
+!/scripts/build_windows.ps1
+
+# Archivos generados y configuración local dentro de los directorios permitidos.
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.download
+*.exe
+*.dll
+.env
+.env.*
+Thumbs.db
+Desktop.ini
